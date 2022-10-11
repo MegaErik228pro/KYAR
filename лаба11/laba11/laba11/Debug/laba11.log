@@ -1,0 +1,14 @@
+﻿Сборка начата 25.11.2021 22:24:53.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\Erik\Desktop\сайты\лаба11\laba11\laba11\laba11.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\laba11.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       FinalizeBuildStatus:
+         Файл "Debug\laba11.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\laba11.tlog\laba11.lastbuildstate".
+     1>Сборка проекта "C:\Users\Erik\Desktop\сайты\лаба11\laba11\laba11\laba11.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.15

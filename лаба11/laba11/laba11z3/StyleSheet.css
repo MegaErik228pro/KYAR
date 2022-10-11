@@ -1,0 +1,41 @@
+GROUP {
+    display: block;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    margin-top: 12pt;
+    font-size: 15pt;
+    border-style: solid;
+    border-color: black;
+}
+
+NAME {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+TIME {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+STYLE {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+PAGES {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+}
+
+ALL {
+    display: block;
+    margin: 50px 100px;
+    border-style: solid;
+    border-color: #8C0088;
+}

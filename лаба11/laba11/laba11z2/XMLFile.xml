@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="StyleSheet.css"?>
+<!DOCTYPE ALL [
+	<!ELEMENT GROUP (NAME, TIME, STYLE, PAGES)>
+	<!ELEMENT GROUP (#PCDATA)>
+	<!ELEMENT NAME (#PCDATA)>
+	<!ELEMENT TIME (#PCDATA)>
+	<!ELEMENT STYLE (#PCDATA)>
+	<!ELEMENT PAGES (#PCDATA)>
+	<!ENTITY name "Led Zeppelin!">
+]>
+<ALL>
+
+	<GROUP>
+		<NAME>&name;</NAME>
+		<TIME>1968—1980</TIME>
+		<STYLE>Хард-рок | Хеви-метал | Блюз-рок | Фолк-рок</STYLE>
+		<PAGES>Британская рок-группа &name;, образовавшаяся в сентябре 1968 года в Лондоне, и признанная одной из самых успешных, новаторских и влиятельных в современной истории.</PAGES>
+	</GROUP>
+
+	<GROUP>
+		<NAME>The Rolling Stones</NAME>
+		<TIME>1962 — Настоящее время</TIME>
+		<STYLE>Рок-н-ролл | Блюз-рок | Ритм-н-блюз | Психоделический рок</STYLE>
+		<PAGES>Британская рок-группа, образовавшаяся 12 июля 1962 года и многие годы соперничавшая по популярности с The Beatles. The Rolling Stones, ставшие важной частью Британского вторжения, считаются одной из самых влиятельных и успешных групп в истории рока.</PAGES>
+	</GROUP>
+
+</ALL>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF8"?>
+<!--FileName: main.xml-->
+<?xml-stylesheet type="text/css" href="1.css"?>
+
+<FACULTY>
+
+<SPECIALIZATION>
+<NAME>1</NAME>
+<TIME>1</TIME>
+<EXAM>1</EXAM>
+<PAGES>1</PAGES>
+<PASSING>1</PASSING>
+</SPECIALIZATION>
+
+<SPECIALIZATION>
+<NAME>1</NAME>
+<TIME>1</TIME>
+<EXAM>1</EXAM>
+<PAGES>1</PAGES>
+<PASSING>1</PASSING>
+</SPECIALIZATION>
+
+</FACULTY>

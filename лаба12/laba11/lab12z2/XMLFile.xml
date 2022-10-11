@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XSLTFile.xsl"?>
+<ALL>
+
+	<GROUP>
+		<NAME>Ученик 1</NAME>
+		<MATH>3</MATH>
+		<BEL>8</BEL>
+		<ENG>6</ENG>
+	</GROUP>
+
+	<GROUP>
+		<NAME>Ученик 2</NAME>
+		<MATH>7</MATH>
+		<BEL>1</BEL>
+		<ENG>10</ENG>
+	</GROUP>
+
+	<GROUP>
+		<NAME>Ученик 3</NAME>
+		<MATH>6</MATH>
+		<BEL>3</BEL>
+		<ENG>9</ENG>
+	</GROUP>
+
+	<GROUP>
+		<NAME>Ученик 4</NAME>
+		<MATH>8</MATH>
+		<BEL>5</BEL>
+		<ENG>9</ENG>
+	</GROUP>
+
+</ALL>
