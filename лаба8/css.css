@@ -1,0 +1,65 @@
+img {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+}
+div {
+	display: inline-block;
+	margin: 0 100px;
+	text-align: center;
+}
+.iz1:hover {
+    transform: scale(0.5);
+}
+.iz2 {
+    transform: rotate(45deg);
+}
+.iz3 {
+	transform: translate(50px);
+}
+.iz4:hover {
+	transform: skew(-20deg);
+}
+
+ul.nav {
+list-style-type: none;
+}
+ul.nav a {
+display: block;
+}
+.s1:link {
+color: red;
+text-decoration: none;
+}
+.s2:visited {
+	color: #8B0000;
+}
+.s3:hover {
+	color: green;
+}
+.s4:active {
+	color: rgb(184, 134, 11);
+}
+
+.nav2 li { 
+	display: inline; 
+	float: left;
+}
+.nav2 a {
+display: inline-block;
+border: 1px solid black;
+padding: 5px 10px 5px 30px;
+background-color: yellow;
+text-decoration: none;
+color: green;
+}
+
+
+@keyframes zag{
+	from { opacity: 0; }
+	50% { opacity: 0.8; }
+	to { opacity: 0; }
+}
+h3 {
+    animation: zag 5s linear infinite;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/HTML4/strict.dtd”>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Задание 4</title>
+</head>
+<style type="text/css">
+.nav2 li { 
+	display: inline; 
+	float: left;
+	position: relative;
+}
+.nav2 a {
+    display: inline-block;
+    text-decoration: none;
+}
+li {
+	border: 1px solid black;
+    width: 20%;
+}
+img {
+    width: 20px;
+    height: 20px;
+}
+ul {
+	margin-left: 10%;
+}
+
+
+.bstu {
+        display: none;
+        position: absolute;
+        top: 100%;
+}
+    .nav2 li:hover .bstu{
+        display: block;
+}
+    .bstu li {
+        width:30px;
+        height: 30px;
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        margin-top: 1px;
+        margin-left: -113%;
+}
+    .bstu li img {
+    	width: 30px;
+    	height: 30px;
+    }
+</style>
+
+<body>
+	<ul class="nav2">
+    <li><img src="facultet1.png">БГТУ
+       <ul class="bstu">
+       	 <li><img src="facultet1.png"></li>
+       </ul>
+    </li>
+
+    <li><img src="facultet1.png"><a href="https://it.belstu.by/">ИТ</a>
+        <ul class="bstu">
+       	 <li><img src="facultet4.png"></li>
+        </ul>
+    </li>
+
+    <li><img src="facultet1.png">ПиМ</a>
+        <ul class="bstu">
+       	 <li><img src="facultet2.png"></li>
+        </ul>
+    </li>
+
+    <li><img src="facultet1.png">ХТиТ</a>
+        <ul class="bstu">
+       	 <li><img src="facultet3.png"></li>
+        </ul>
+    </li>
+
+    </ul>
+</body>
+</html>

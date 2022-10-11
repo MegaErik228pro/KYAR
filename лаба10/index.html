@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/HTML4/strict.dtd”>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Задание 1</title>
+</head>
+
+<style type="text/css">
+.grid {
+ display:grid;
+ grid-template-columns:220px 220px 220px;
+ grid-template-rows:40px 40px 40px;
+ grid-gap: 10px;
+ padding-left: 30px;
+ }
+ .div1 {
+ grid-row-start: 1;
+ grid-row-end: 2;
+ grid-column-start: 1;
+ grid-column-end: 4;
+ text-align: center;
+ border: 2px solid black;
+ font-size: 30px;
+ width: 100%;
+ }
+ .div2 {
+ text-align: center;
+ border: 2px solid black;
+ font-size: 15px;
+ padding-top: 8px;
+ }
+
+ .grid {
+display: flex;
+flex-flow: row wrap;
+align-content: flex-start;
+align-items: stretch;
+justify-content: center;
+}
+.div1 {
+align-self: center;
+flex: 1 1 100%;
+}
+.div2 {
+align-self: center;
+flex: 1 1 auto;
+}
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+    a {
+    font-size: 30px;
+    color: green;
+}
+img {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+}
+@media screen and (min-width:480px) and (max-width: 768px) {
+    a {
+    font-size: 20px;
+    color: blue;
+}
+img {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+}
+@media screen and (max-width: 480px) {
+    a {
+    font-size: 10px;
+    color: red;
+}
+img {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+}
+ 
+}
+
+</style>
+
+<body>
+
+<div class="grid">
+<div class="div1"><b>«HTML5 и CSS3»</b></div>
+
+<div class="div2">Что такое HTML5?</div>
+<div class="div2">Что такое CSS?</div>
+<div class="div2">Что дает связка HTML5+CSS3</div>
+<div class="div2">Flexbox-верстка — разметка макетов веб-страниц, которая позволяет 
+автоматически настраивать ширину элементов, находящихся внутри flex контейнера. Для применения данного способа разметки следует учитывать 
+разделение применяемых свойств на свойства flex-контейнера и свойства 
+flex-элемента.</div>
+<div class="div2">С помощью display: flex; осуществляется преобразование HTMLэлемента в flex-контейнер, а элементы находящийся внутри него в flex элементы. По умолчанию flex-элементы помещаются друг за другом в одной 
+строке. </div>
+</div>
+
+<a class="pics"><b>PICS</b></a><br>
+
+<img src="image_part_001.jpg">
+<img src="image_part_002.jpg">
+<img src="image_part_003.jpg">
+<img src="image_part_004.jpg">
+
+</body>
