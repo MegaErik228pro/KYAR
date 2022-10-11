@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/HTML4/strict.dtd”>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid</title>
+</head>
+
+<style type="text/css">
+.grid {
+ display:grid;
+ grid-template-columns:220px 220px 220px;
+ grid-template-rows:40px 40px 40px;
+ grid-gap: 10px;
+ padding-left: 30px;
+ }
+ .div1 {
+ grid-row-start: 1;
+ grid-row-end: 2;
+ grid-column-start: 1;
+ grid-column-end: 4;
+ text-align: center;
+ border: 2px solid black;
+ font-size: 30px;
+ }
+ .div2 {
+ text-align: center;
+ border: 2px solid black;
+ font-size: 15px;
+ padding-top: 8px;
+
+ }
+
+.grid2 {
+	display:inline-grid;
+	grid-template-columns:20px 160px 160px 170px 160px 20px;
+	grid-template-rows:200px 200px; 
+	grid-gap: 10px;
+}
+.div4 {
+ text-align: center;
+ border: 2px solid black;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ text-align: justify;
+ }
+.div3 {
+ text-align: center;
+ border: 2px solid black;
+ grid-row-start: 1;
+ grid-row-end: 3;
+ text-align: justify;
+ }
+ .div5 {
+ text-align: center;
+ border: 2px solid black;
+ text-align: justify;
+ }
+
+ 
+</style>
+
+<body>
+
+<div class="grid">
+<div class="div1"><b>«HTML5 и CSS3»</b></div>
+
+<div class="div2">Что такое HTML5?</div>
+<div class="div2">Что такое CSS?</div>
+<div class="div2">Что дает связка HTML5+CSS3</div>
+</div>
+
+<div class="grid2">
+<div class="div3" style="word-wrap: break-word; padding-top: 145px; font-size: 20px;"><b>HTML</b></div>
+<div class="div3">HTML5 – современная версия языка гипертекстовой разметки, которая получила ряд дополнений и новых возможностей. В состав рабочей группы ее разработчиков входят представители таких гигантов IT-сферы, как Google, Apple, IBM, Microsoft и другие.</div>
+<div class="div3">Многие эксперты считают HTML5 не продолжением развития языка HTML, а новой открытой программной платформой, которая применяется для создания веб-интерфейсов, использующих текстовые и мультимедийные инструменты (видеоролики, графика, аудиозаписи и другие элементы).</div>
+
+<div class="div3" style="margin-left: 10px;">Но хорошим дополнением для HTML стали CSS (Cascading Style Sheets) – каскадные таблицы стилей, которые содержат описание особенностей внешнего вида веб-документа, созданного на основе инструментов гипертекстовой разметки. В основном CSS используется для визуального оформления веб-страниц.</div>
+<div class="div4">Использование набора технологий HTML5 + CSS3 открывает разработчикам огромный арсенал программных средств.</div>
+<div class="div5">Если для разработки использовались эти средства, то они ускорят загрузку страниц и привнесут ряд привлекательных новаций.</div>
+<div class="div3" style="word-wrap: break-word; padding-top: 160px; font-size: 20px;"><b>CSS</b></div>
+</body>
+
+</html>

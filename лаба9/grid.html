@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/HTML4/strict.dtd”>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid</title>
+</head>
+
+<style type="text/css">
+.grid {
+ display:grid;
+ grid-template-columns: 60px 270px 125px;
+ grid-template-rows: 120px 270px 60px;
+ grid-gap: 5px;
+ }
+ .div2 {
+ grid-row-start: 1;
+ grid-row-end: 2;
+ grid-column-start: 2;
+ grid-column-end: 4;
+ text-align: center;
+ }
+ .div1 {
+ grid-row-start: 1;
+ grid-row-end: 3;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ text-align: center;
+ }
+ .div3 {
+ text-align: justify;
+ }
+ .div4 {
+ text-align: left;
+ }
+ .div5 {
+ grid-row-start: 3;
+ grid-row-end: 4;
+ grid-column-start: 1;
+ grid-column-end: 4;
+ text-align: center;
+ }
+ .grid div {
+     background: limegreen;
+ }
+ .div1 a {
+    color: black;
+ }
+</style>
+
+<body>
+	<div class="grid">
+     <div class="div1"><nav>
+        <a href="index.html">Задание 1</a><br>
+        <a href="skeleton.html">Задание 2</a><br>
+        <a href="photo.html">Задание 3</a><br></nav></div>
+     <div class="div2"><header><b>CSS Grid</b><br>W3C описывает модуль CSS Grid Layout как систему двумерного макета, оптимизированного для дизайна пользовательского интерфейса.</header></div>
+     <div class="div3"><article><b>Сетка</b> <i>(grid)</i> представляет собой набор пересекающихся горизонтальных и вертикальных линий, делящих пространство grid-контейнера на области сетки, в которые могут быть помещены элементы сетки.<br><b>Линии сетки</b> <i>(grid lines)</i> — это невидимые горизонтальные и вертикальные разделительные линии, они существуют по обе стороны от строки и столбца. На них можно ссылаться по числовому индексу или имени, заданному в CSS-коде.</article></div>
+     <div class="div4"><aside>Контейнер-сетка бывает двух видов:<br><ul><li>обычный display: grid</li><li>встроенный display: inline-grid</li></ul></aside></div>
+     <div class="div5"><footer>Плюто Эрик Валерьевич, 1 курс, 5 группа.<br>
+    +375333251105<br>
+    Plutoe98@gmail.com</footer></div>
+
+</body>
+</html>

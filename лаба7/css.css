@@ -1,0 +1,62 @@
+img {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+}
+div {
+	display: inline-block;
+	margin: 0 100px;
+	text-align: center;
+}
+.iz1:hover {
+    transform: scale(0.5);
+}
+.iz2 {
+    transform: rotate(45deg);
+}
+.iz3 {
+	transform: translate(50px);
+}
+.iz4:hover {
+	transform: skew(-20deg);
+}
+
+
+
+
+.z2 {
+    perspective: 100px;
+}
+.iz5 {
+    transform: rotateX(5deg);
+    margin-top: 50px;
+}
+.iz6 {
+	transform: rotateY(5deg);
+}
+.iz8 {
+    transform: rotateY(-3deg);
+}
+
+
+
+.z3 {
+	width: 300px;
+	height: 300px;
+	border: 2px solid black;
+	color: skyblue;
+	transition: color 4s linear;
+}
+.z3:hover {
+    color: black;
+}
+
+
+@keyframes zag{
+	from { opacity: 0; }
+	50% { opacity: 0.8; }
+	to { opacity: 0; }
+}
+h3 {
+    animation: zag 5s linear infinite;
+}
