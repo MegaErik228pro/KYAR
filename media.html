@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            ul {
+                list-style-type: none;
+                text-align: center;
+            }
+            li {
+                border: black 2px solid;
+                padding: 10px 20px 10px 20px;
+                display: inline-block;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .li {
+                margin: auto;
+                border: none;
+                font-weight: bold;
+            }
+            li:hover {
+                border-color: red;
+            }
+            @media (max-width: 500px)
+            {
+                ul {
+                list-style-type: none;
+                text-align: center;
+            }
+            li {
+                border: black 2px solid;
+                padding: 10px 20px 10px 20px;
+                display: none;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .li {
+                margin: auto;
+                border: none;
+                font-weight: bold;
+                display: block;
+            }
+            .menu:hover .p li {
+                display: block;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li class="li"><a>Menu</a></li>
+            <ul class="p">
+                <li>11111</li>
+                <li>222</li>
+                <li>3333333</li>
+            </ul>
+        </ul>
+    </body>
+</html>

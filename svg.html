@@ -1,0 +1,81 @@
+<!doctype html5>
+<html>
+    <head>
+        <title>SVG</title>
+    </head>
+    <body>
+            <!-- Круг с радиальной заливкой и изменяющейся границей -->
+        <svg viewBox="0 0 100px 100px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <radialGradient id="radial">
+                    <stop offset = "50%" stop-color="yellow"/>
+                    <stop offset = "90%" stop-color="red"/>
+                </radialGradient>
+            </defs>
+            <circle id=circle cx="70px" cy="70px" r="50px" stroke="red" stroke-width="5px" fill="url(#radial)" />
+            <animate
+            xlink:href="#circle"
+            attributeName="stroke"
+            values="red; blue; red;"
+            dur="5s"
+            begin="click"
+            fill="freeze"
+            repeatCount="indefinite"/>
+        </svg>
+            <!-- Кривая линия с текстом -->
+        <svg viewBox="0 0 100px 100px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <path d="M20,20 h70 v70 h-70 v-70 z"
+            id="rect" stroke="black" stroke-width="3px" fill="none" />
+            <text style="font-family: Arial, Helvetica, sans-serif;">
+             <textPath xlink:href="#rect">Кривая с обтекающим текстом Кривая с обтекающим текстом</textPath>
+            </text>
+        </svg>
+            <!-- Анимация клика -->
+        <svg id="svg" viewBox="0 0 100px 100px" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <rect width="100%" height="100%" fill="Gainsboro"/>
+            <circle cx="100px" cy="100px" r="70px" fill="none" stroke="AliceBlue" stroke-width="5px"/>
+            <circle cx="100px" cy="100px" r="70px" fill="none" stroke="blue" stroke-dashoffset="108" stroke-dasharray="0,434" stroke-width="5px">
+                <!-- transform="rotate(-87, 100, 100)" -->
+            <animate attributeName="stroke-dasharray" dur="5s" begin="svg.click" fill="freeze" values="0,434;434,0" />
+            </circle>
+            <text x="50%" y="50%" fill="blue" text-anchor="middle" dy="7" font-size="20">Click</text>
+        </svg>
+
+
+
+
+
+        <!-- Анимация клика 2 -->
+        <svg id="svg1" viewBox="0 0 100px 100px" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <rect width="100%" height="100%" fill="Gainsboro"/>
+            <circle cx="100px" cy="100px" r="70px" fill="none" stroke="AliceBlue" stroke-width="5px"/>
+            <circle cx="100px" cy="100px" r="70px" fill="none" stroke="blue" stroke-dashoffset="-112" stroke-dasharray="0,217 0,217" stroke-width="5px">
+            <animate attributeName="stroke-dasharray" dur="5s" begin="svg1.click" fill="freeze" values="0,217 0,217;0,0 434,0" />
+            </circle>
+            <text x="50%" y="50%" fill="blue" text-anchor="middle" dy="7" font-size="20">Click</text>
+        </svg>
+         <!-- Анимация клика 3 -->
+         <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 120 120" >  
+   <defs>
+    <mask id="msk1">
+        <rect width="100%" height="100%" fill="white" />
+      <circle cx="60" cy="60" r="50"  stroke= "black"  fill="none" stroke-dashoffset="157" 
+      stroke-dasharray="157,0 157,0"   stroke-width="14" >
+           <!-- Анимация сдвига маски реализует открывание прерывистой линии -->
+        <animate attributeName="stroke-dasharray" dur="4s" begin="svg1.click"
+        values="157,0 157,0;0,314,0,0;" fill="freeze" /> 
+      </circle>    
+    </mask>
+   </defs>    
+     <!-- Фон серого цвета       -->
+      <rect width="100%" height="100%" fill="#F3F3F3" />
+      <!-- Путь заполнения линии прогрессбара     -->
+    <circle cx="60" cy="60" r="50" fill="none" stroke="#E1E1E1" stroke-width="14"/>
+         <!-- Прерывистая линия заэкранирована маской mask="url(#msk1)" -->
+    <circle cx="60" cy="60" r="50" mask="url(#msk1)" transform="rotate(-90 60 60)" fill="none" stroke-dashoffset="314" stroke-dasharray="3.14, 3.14"  stroke="#62169D" stroke-width="12" />
+          
+      <text id="count" x="50%" y="50%" fill="#622B80" text-anchor="middle" dy="7" font-size="20">Click</text>
+     
+</svg>     
+    </body>
+</html>

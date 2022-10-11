@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Задание 4</title>
+</head>
+<body>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" >
+
+<rect fill="lightblue" width="100%" height="100%"/>
+<style>
+.col-1{ fill: red; }
+.col-2{ fill: yellow; }
+.col-3{ fill: blue; }
+.col-4{ fill: orange; }
+.col-5{ fill: green; }
+</style>
+<defs>
+<path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+</defs>
+<use xlink:href="#home" class="col-1" x="150" y="10" transform="rotate(58 10 26)" stroke="black" stroke-width="2px" stroke-linecap="round"/>
+<use xlink:href="#home" class="col-2" x="300" y="10" transform="rotate(0 26 26)" stroke="white" stroke-width="3px" stroke-linecap="square"/>
+<use xlink:href="#home" class="col-3" x="450" y="10" transform="rotate(36 26 26)" stroke="red" stroke-width="1px"/>
+<use xlink:href="#home" class="col-4" x="100" y="-500" transform="rotate(100 83 26)"/>
+<use xlink:href="#home" class="col-5" x="450" y="-400" transform="rotate(140 130 26)"/>
+</svg>
+</body>
+</html>
